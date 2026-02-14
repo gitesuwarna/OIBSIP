@@ -1,0 +1,261 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#00c9ff,#92fe9d);
+}
+
+/* ================= HEADER ================= */
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:12px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,0.85);
+    backdrop-filter: blur(12px);
+    z-index:100;
+}
+
+.header-left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo{
+    width:40px;
+    height:40px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.brand{
+    font-weight:700;
+    font-size:1.1rem;
+}
+
+nav a{
+    margin-left:18px;
+    text-decoration:none;
+    color:#000;
+    font-weight:600;
+}
+
+/* ================= HERO ================= */
+.hero{
+    height:100vh;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:2.6rem;
+}
+
+.sub{
+    color:#ffeb3b;
+}
+
+.btn{
+    padding:12px 30px;
+    background:#ffeb3b;
+    color:black;
+    border-radius:30px;
+    text-decoration:none;
+    margin-top:15px;
+    font-weight:600;
+}
+
+/* ================= SECTIONS ================= */
+.section{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.glass{
+    background:rgba(255,255,255,0.75);
+    border-radius:20px;
+    margin:30px;
+}
+
+/* ================= ABOUT INTERNSHIP ================= */
+.internship-img{
+    width:100%;
+    max-width:420px;
+    margin:20px auto;
+    border-radius:18px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+    display:block;
+}
+
+.internship-text{
+    font-size:1.05rem;
+    margin:15px 0 20px;
+    line-height:1.6;
+}
+
+.internship-points{
+    list-style:none;
+    text-align:left;
+    max-width:650px;
+    margin:20px auto 0;
+    line-height:2;
+    font-size:1.05rem;
+}
+
+.internship-points li{
+    padding-left:10px;
+}
+
+/* ================= CARDS ================= */
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:rgba(255,255,255,0.6);
+    padding:25px;
+    width:220px;
+    border-radius:15px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Glass Hover Effect */
+.glass-hover{
+    transition:0.4s ease;
+}
+
+.glass-hover:hover{
+    background:rgba(255,255,255,0.85);
+    transform:translateY(-8px) scale(1.03);
+}
+
+/* ================= OFFER ================= */
+.offer{
+    list-style:none;
+    line-height:2;
+    font-size:1.1rem;
+}
+
+/* ================= FORM ================= */
+.form-section{
+    background:rgba(255,255,255,0.65);
+    border-radius:20px;
+    margin:30px;
+}
+
+.form{
+    max-width:450px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.form input,
+.form textarea{
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:1rem;
+}
+
+.form button{
+    background:#764ba2;
+    color:white;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+/* ================= THANK YOU ================= */
+.thankyou{
+    display:none;
+    background:white;
+    padding:25px;
+    margin-top:20px;
+    border-radius:15px;
+}
+
+/* ================= PINK SECTIONS ================= */
+.pink{
+    background: linear-gradient(135deg,#ff5f9e,#ffc3a0);
+    color:white;
+    border-radius:20px;
+    margin:30px;
+}
+
+.pink-light{
+    background: linear-gradient(135deg,#fbc2eb,#a6c1ee);
+    border-radius:20px;
+    margin:30px;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* ================= WHATSAPP ================= */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    font-size:26px;
+    padding:14px;
+    border-radius:50%;
+    color:white;
+    text-decoration:none;
+}
+
+/* ================= SCROLL ANIMATION ================= */
+.scroll{
+    opacity:0;
+    transform:translateY(50px);
+    transition:1s;
+}
+
+.scroll.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media(max-width:768px){
+    nav{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .section{
+        padding:60px 5%;
+    }
+
+    .internship-points{
+        font-size:1rem;
+    }
+}
